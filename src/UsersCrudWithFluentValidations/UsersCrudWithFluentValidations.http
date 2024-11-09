@@ -1,0 +1,48 @@
+@UsersCrudWithFluentValidations_HostAddress = http://localhost:5070
+
+GET {{UsersCrudWithFluentValidations_HostAddress}}/weatherforecast/
+Accept: application/json
+
+
+###
+GET {{UsersCrudWithFluentValidations_HostAddress}}/api/user
+Accept: application/json
+
+
+###
+POST {{UsersCrudWithFluentValidations_HostAddress}}/api/user
+Accept: application/json
+Content-Type: application/json
+
+{
+  "UserName":"alexis",
+  "Password":"1234",
+  "Name":"alexis",
+  "LastName":"martínez",
+  "Email":"alexis@martinez.com",
+  "IsActive":true,
+  "CreationDate":"2024-11-08T22:30:00",
+  "LastModifiedDate":"2024-11-08T22:30:00"
+}
+
+
+###
+DELETE {{UsersCrudWithFluentValidations_HostAddress}}/api/user/1
+Accept: application/json
+
+
+###
+PUT {{UsersCrudWithFluentValidations_HostAddress}}/api/user
+Accept: application/json
+Content-Type: application/json
+
+{
+  "UserName":"alexis",
+  "Password":"1234",
+  "Name":"alexis",
+  "LastName":"martínez",
+  "Email":"alexis@martinez.com",
+  "IsActive":true,
+  "CreationDate":"2024-11-08T22:30:00",
+  "LastModifiedDate":"2024-11-08T22:30:00"
+}
