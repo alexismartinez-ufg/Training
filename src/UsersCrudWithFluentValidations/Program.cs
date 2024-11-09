@@ -1,4 +1,7 @@
 
+using FluentValidation;
+using SharpGrip.FluentValidation.AutoValidation.Mvc.Extensions;
+
 namespace UsersCrudWithFluentValidations
 {
     public class Program
@@ -13,6 +16,9 @@ namespace UsersCrudWithFluentValidations
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddValidatorsFromAssemblyContaining<Program>();
+            builder.Services.AddFluentValidationAutoValidation();
 
             var app = builder.Build();
 
