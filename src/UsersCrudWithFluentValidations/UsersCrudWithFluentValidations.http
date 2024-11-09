@@ -15,11 +15,11 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "UserName":"alexis",
-  "Password":"1234",
-  "Name":"alexis",
-  "LastName":"martínez",
-  "Email":"alexis@martinez.com",
+  "UserName":"",
+  "Password":"",
+  "Name":"",
+  "LastName":"",
+  "Email":"alexis",
   "IsActive":true,
   "CreationDate":"2024-11-08T22:30:00",
   "LastModifiedDate":"2024-11-08T22:30:00"
