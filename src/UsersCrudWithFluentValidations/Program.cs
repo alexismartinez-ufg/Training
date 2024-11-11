@@ -41,7 +41,7 @@ namespace UsersCrudWithFluentValidations
 
             app.UseAuthorization();
 
-
+            app.UseCors("AllowAngularApp");
             app.MapControllers();
 
             app.Run();
